@@ -7,6 +7,14 @@
       "color": "Brown",
       "gender": "Male",
       "id": 1
+    },
+    {
+      "name": "erwer",
+      "height": "166",
+      "mass": "80",
+      "color": "Brown",
+      "gender": "Male",
+      "id": 2
     }
   ]
 }

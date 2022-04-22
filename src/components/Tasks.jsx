@@ -30,7 +30,7 @@ const Tasks = ({ tasks, onDelete }) => {
         </div>
       </div>
 
-      {tasks.filter((tasks) => +tasks.height > +nameFilter).filter((tasks) => +tasks.mass > +heightFilter).map((task, index) => (
+      {tasks.filter(tasks => (+tasks.height > +nameFilter && + tasks.mass > +heightFilter)).map((task, index) => (
         <Task
           key={index} task={task}
           onDelete={onDelete}
@@ -45,4 +45,3 @@ const Tasks = ({ tasks, onDelete }) => {
 };
 
 export default Tasks;
-

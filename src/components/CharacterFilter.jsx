@@ -4,12 +4,6 @@ const CharacterFilter = () => {
     const [nameFilter, setFilterName] = useState('')
     const [heightFilter, setFilterHeight] = useState('')
 
-    // const onFilter = (event) => {
-    //     onFilter({ nameFilter, heightFilter })
-    //     setFilterName('')
-    //     setFilterHeight('')
-    // }
-
     return (
         <div className="add-form" >
             <div className="form-control" >

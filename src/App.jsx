@@ -5,17 +5,12 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
-import Footer from "./components/Footer";
-import About from "./components/About";
-
-import CharacterFilter from "./components/CharacterFilter";
-
 
 function App() {
-  const [showAddTask, setShowAddTask] = useState(false);
+ const [showAddTask, setShowAddTask] = useState(false);
 
   const [tasks, setTasks] = useState([]);
-
+  console.log(showAddTask);
   useEffect(() => {
     const getTasks = async () => {
       const tasksFromServer = await fetchTasks();
@@ -24,7 +19,9 @@ function App() {
     getTasks();
   }, []);
 
-
+function dupadupa(){
+  console.log("XYZ")
+}
 
   //Fetch Tasks
   const fetchTasks = async () => {
@@ -73,6 +70,7 @@ function App() {
                   <Tasks
                     tasks={tasks}
                     onDelete={deleteTask}
+                    showAddTaskProp={!showAddTask}
                   />
                 ) : (
                   'No Character To Show'

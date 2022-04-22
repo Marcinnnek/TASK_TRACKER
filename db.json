@@ -1,20 +1,28 @@
 {
   "tasks": [
     {
-      "name": "sdafsdf",
-      "height": "50",
-      "mass": "100",
-      "color": "Brown",
-      "gender": "Male",
+      "name": "XXX",
+      "height": "190",
+      "mass": "70",
+      "color": "Amber",
+      "gender": "Female",
       "id": 1
     },
     {
-      "name": "erwer",
-      "height": "166",
-      "mass": "80",
+      "name": "XYZ",
+      "height": "160",
+      "mass": "79",
       "color": "Brown",
       "gender": "Male",
       "id": 2
+    },
+    {
+      "name": "XYY",
+      "height": "177",
+      "mass": "76",
+      "color": "Hazel",
+      "gender": "Male",
+      "id": 3
     }
   ]
 }
